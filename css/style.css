@@ -235,3 +235,46 @@ li a{
     margin: 0 auto;
     margin-top: 4%;
 }
+
+.ttls5{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+.s5 {
+    border-radius: 10px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.ptf {
+  display: flex;
+  align-items: center;
+  max-width: 80%;
+  background-color: #A8573F;
+}
+
+.ptfp1 {
+
+}
+
+.ptfttl{
+    font-size: 28px;
+    font-weight: 700;
+}
+.ptftxt{
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 20%;
+}
+.ptfp2 {
+  background-color: white;
+  border-radius: 6px;
+}
+
+.imgptf {
+
+  object-fit: cover;
+}
