@@ -10,7 +10,7 @@
 <body>
     <nav>
         <img class="logo" src="img/logo.png" alt="logo">
-        <ul>
+        <ul class="navheader">
             <li><a href="#nav1">Quem Somos</a></li>
             <li><a href="#nav2">Serviços</a></li>
             <li><a href="#nav3">Como Trabalhamos</a></li>
@@ -23,7 +23,7 @@
     <div class="s1">
         <div class="bsn">
         <img src="img/bsn.png" alt="bsnimg">
-        <button class="btn"><a>Entre em contato</a></button>
+        <button class="btn"><a href="">Entre em contato</a></button>
         </div>
     </div>
     <div class="ttls2">
@@ -47,10 +47,10 @@
         </div>
     </div>
 
-    <hr class="hr1">
+    <hr class="hr1" id="nav2">
 
     <div class="ttls3">
-        <h1 id="nav2" class="ttl">Serviços</h1>
+        <h1 class="ttl">Serviços</h1>
     </div>
 
     <div class="s3">
@@ -88,10 +88,10 @@
         </div>
     </div>
 
-    <hr class="hr2">
+    <hr class="hr2" id="nav3">
 
     <div class="ttls4">
-        <h1 id="nav3" class="ttl">Como Trabalhamos</h1>
+        <h1 class="ttl">Como Trabalhamos</h1>
     </div>
     <div class="s4">
         <div class="s4p1">
@@ -106,9 +106,9 @@
         </div>
     </div>
 
-    <hr class="hr3">
+    <hr class="hr3" id="nav4">
     <div class="ttls5">
-        <h1 id="nav4" class="ttl">Nosso Portfólio</h1>
+        <h1 class="ttl">Nosso Portfólio</h1>
     </div>
     <div class="s5">
         <div class="ptf">
@@ -143,23 +143,27 @@
     <footer>
         <div class="ft">
             <div class="logoft"><img src="img/logo.png" alt="logoft"></div>
-            <div class="btft"><p>ENTRE EM CONTATO</p></div>
+            <button class="btft"><a href="">ENTRE EM CONTATO</a></button>
         </div>
         <div class="ft">
-            <p class="navft">Quem Somos?</p>
-            <p class="navft">Serviços</p>
-            <p class="navft">Como Trabalhamos</p>
-            <p class="navft">Nosso Portfólio</p>
+            <ul class="navft">
+                <li><a href="#nav1">Quem Somos</a></li>
+                <li><a href="#nav2">Serviços</a></li>
+                <li><a href="#nav3">Como Trabalhamos</a></li>
+                <li><a href="#nav4">Portfólio</a></li>
+            </ul>
         </div>
         <div class="ft">
-            <p class="ifft">Av. Brigadeiro Faria Lima 2601</p>
-            <p class="ifft">peachfycontato@gmail.com</p>
-            <p class="ifft">(11) 2400-6678</p>
+            <ul class="ifft">
+                <li><p>Av. Brigadeiro Faria Lima 2601</p></li>
+                <li><p>peachfycontato@gmail.com</p></li>
+                <li><p>(11) 2400-6678</p></li>
+            </ul>
             <div class="redes">
-                <img class="rdimg" src="" alt="imgrd">
-                <img class="rdimg" src="" alt="imgrd">
-                <img class="rdimg" src="" alt="imgrd">
-                <img class="rdimg" src="" alt="imgrd">
+                <div class="rdimg"><a href=""><img src="img/linkedin.png" alt="imgrd"></a></div>
+                <div class="rdimg"><a href=""><img src="img/whatsapp.png" alt="imgrd"></a></div>
+                <div class="rdimg"><a href=""><img src="img/facebook.png" alt="imgrd"></a></div>
+                <div class="rdimg"><a href=""><img src="img/instagram.png" alt="imgrd"></a></div>
             </div>
         </div>
     </footer>

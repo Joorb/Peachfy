@@ -26,7 +26,7 @@ nav{
     padding-bottom: 0.5%;
 }
 
-ul{
+.navheader{
     display:flex;
     text-decoration: none;
     list-style: none;
@@ -34,17 +34,17 @@ ul{
     margin-right: 2%;
 }
 
-li{
+.navheader li{
     padding-right: 20px;
     color: #A8573F;
     font-weight: 600;
     font-size: 20px;
 }
-li:hover{
+.navheader li:hover{
     transform: scale(1.01);
     transition: 0.3s;
 }
-li a{
+.navheader li a{
     text-decoration: none;
     color: #A8573F;
 }
@@ -77,8 +77,6 @@ li a{
   top: 75%;
   left: 6.9%;
   background-color: #FFFFFF;
-  color: #4F2012;
-  font-size: 22px;
   padding: 1.5% 2.5% 1.5% 2.5%;
   border: none;
   cursor: pointer;
@@ -89,7 +87,11 @@ li a{
   transform: scale(1.05);
   transition: 0.6s;
 }
-
+.btn a{
+    text-decoration: none;
+    color: #4F2012;
+    font-size: 22px;
+}
 .ttls2{
     display: flex;
     justify-content: center;
@@ -292,25 +294,68 @@ footer{
     justify-content: space-around;
     background-color: #4F2012;
 }
-
-.logoft{
-    width: 27%;
-    padding: 2%;
+.ft{
+    padding: 2% 0 2% 0;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+.logoft{
+    width: 33%;
 }
 .logoft img{
     width: 100%
-    
 }
 .btft{
     display: flex;
     justify-content: center;
     background-color: #FFFFFF;
-    color: #662613;
-    width:28%;
+    width:38%;
+    margin-top: 3%;
     border-radius: 5px;
+}
+.btft:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+.btft a{
     font-weight: 700;
     font-size: 20px;
-    padding: 2%;
+    color: #662613;
+    text-decoration: none;
+    padding: 7% 0 7% 0;
 }
-
+.navft{
+    list-style: none;
+}
+.navft li{
+    line-height: 2;
+}
+.navft li:hover{
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+.navft a{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+}
+.ifft{
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    list-style: none;
+}
+.ifft li{
+    line-height: 2;
+}
+.redes{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    background-color: rgba(0, 255, 255, 0);
+}
