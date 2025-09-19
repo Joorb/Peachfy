@@ -17,10 +17,11 @@ nav{
     display:flex;
 	justify-content:space-between;
     transition: 1s;
+    background-color: #382cdd;
+    width: 100%;
+    max-height: 100px;
 }
-.sidebar{
-    display: none;
-}
+
 .logo{
     width:7% ;
     margin-left: 2%;
@@ -59,6 +60,55 @@ nav{
     border: none;
 }
 
+.sidebar{
+    position: absolute;
+    width: 100%;
+    max-height: 500px;
+    background-color: #A8573F;
+    margin-top: -112%;
+    transition: all .5s ease;
+    z-index: 500;
+}
+#check{
+    display: none;
+}
+label #cancel{
+    opacity: 0;
+    visibility: hidden;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+label #btn{
+    cursor: pointer;
+    margin-right: 30px;
+    height: 45px;
+    width: 45px;
+}
+
+#check:checked ~ .sidebar{
+    margin-top:38%;
+}
+
+#check:checked ~ label #cancel{
+    opacity: 1;
+    visibility: visible;
+}
+.sidebar a{
+    text-decoration: none;
+}
+.sidebar p{
+    margin-left: 2%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.sidebar p:hover{
+    transform:scale(1.005);
+    transition: 0.5s;
+}
 .s1{
     display: flex;
     justify-content: center;
@@ -66,30 +116,30 @@ nav{
 
 .bsn {
     margin-top: 1.5%;
-  position: relative;
-  width: 70%;
+    position: relative;
+    width: 70%;
 }
 
 .bsn img{
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
 }
 
 .btn {
-  position: absolute;
-  top: 75%;
-  left: 6.9%;
-  background-color: #FFFFFF;
-  padding: 1.5% 2.5% 1.5% 2.5%;
-  border: none;
-  cursor: pointer;
-  border-radius: 10px;
+    position: absolute;
+    top: 75%;
+    left: 6.9%;
+    background-color: #FFFFFF;
+    padding: 1.5% 2.5% 1.5% 2.5%;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 .btn:hover {
-  transform: scale(1.05);
-  transition: 0.6s;
+    transform: scale(1.05);
+    transition: 0.6s;
 }
 .btn a{
     text-decoration: none;
@@ -386,46 +436,13 @@ footer{
 }
 nav{
     background-color:#A8573F;
+    position: fixed;
+    z-index: 1000;
 }
 .navhr{
-    background-color: #FFFFFF;
+    background-color: #ff0000;
+    position: relative;
+    z-index: 2000;
+    width: 100%;
 }
-.sidebar {
-    display: block;
-    height: 100%;
-    width: 200;
-    background-color: #A8573F;
-    overflow-x: hidden;
-    transition: 0.5s;
-
-}
-
-.sidebar a {
-    text-decoration: none;
-    color: white;
-
-    transition: 0.3s;
-}
-
-.sidebar a:hover {
-    color: #f1f1f1;
-}
-
-.sidebar .close-btn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-.content {
-    margin-top: 80px; /* Para dar espaço ao header fixo */
-    padding: 20px;
-}
-
-.open {
-    width: 250px;
-}
-
 }
