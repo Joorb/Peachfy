@@ -18,14 +18,18 @@ nav{
 	justify-content:space-between;
     transition: 1s;
 }
-
+.sidebar{
+    display: none;
+}
 .logo{
     width:7% ;
     margin-left: 2%;
     padding-top: 0.6%;
     padding-bottom: 0.5%;
 }
-
+.logob{
+    display: none;
+}
 .navheader{
     display:flex;
     text-decoration: none;
@@ -142,21 +146,25 @@ nav{
     margin-top: 4%;
 }
 
-.s3{
+
+.tdsv{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2%;
+    align-items: center;
+    gap: 4%;
+    width: 80%;
+    margin: auto;
 }
 
 .sv{
     margin-top: 3%;
     max-width: 350px;
+    max-height: 400px;
     border-radius: 10px;
     border-style: solid;
     border-color: #A8573F;
     border-width: 1px;
-    
 }
 .sv img{
     width: 100.4%;
@@ -315,6 +323,7 @@ footer{
     width:38%;
     margin-top: 3%;
     border-radius: 5px;
+    border: none;
 }
 .btft:hover {
   transform: scale(1.03);
@@ -358,4 +367,65 @@ footer{
     justify-content: space-around;
     width: 50%;
     background-color: rgba(0, 255, 255, 0);
+}
+.rdimg:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+@media(max-width : 500px){
+.navheader{
+    display: none;    
+}
+.logo{
+    display: none;
+}
+.logob{
+    display: block;
+    width: 20%;
+}
+nav{
+    background-color:#A8573F;
+}
+.navhr{
+    background-color: #FFFFFF;
+}
+.sidebar {
+    display: block;
+    height: 100%;
+    width: 200;
+    background-color: #A8573F;
+    overflow-x: hidden;
+    transition: 0.5s;
+
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.content {
+    margin-top: 80px; /* Para dar espaço ao header fixo */
+    padding: 20px;
+}
+
+.open {
+    width: 250px;
+}
+
 }
