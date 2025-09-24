@@ -17,7 +17,7 @@ nav{
     display:flex;
 	justify-content:space-between;
     transition: 1s;
-    background-color: #382cdd;
+    background-color: #FFFEFC;
     width: 100%;
     max-height: 100px;
 }
@@ -36,7 +36,6 @@ nav{
     text-decoration: none;
     list-style: none;
     margin-top: 0.6%;
-    margin-right: 2%;
 }
 
 .navheader li{
@@ -72,43 +71,11 @@ nav{
 #check{
     display: none;
 }
-label #cancel{
+.lblcheck{
     opacity: 0;
-    visibility: hidden;
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-    margin-right: 30px;
-}
-label #btn{
-    cursor: pointer;
-    margin-right: 30px;
-    height: 45px;
-    width: 45px;
+    display: none;
 }
 
-#check:checked ~ .sidebar{
-    margin-top:38%;
-}
-
-#check:checked ~ label #cancel{
-    opacity: 1;
-    visibility: visible;
-}
-.sidebar a{
-    text-decoration: none;
-}
-.sidebar p{
-    margin-left: 2%;
-    color: #fff;
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.sidebar p:hover{
-    transform:scale(1.005);
-    transition: 0.5s;
-}
 .s1{
     display: flex;
     justify-content: center;
@@ -440,9 +407,64 @@ nav{
     z-index: 1000;
 }
 .navhr{
-    background-color: #ff0000;
-    position: relative;
-    z-index: 2000;
-    width: 100%;
+    display: none;
+}
+#check{
+    display: none;
+}
+.lblcheck{
+    opacity: 1;
+    display: block;
+}
+label{
+    width: 45px;
+    height: 45px;
+}
+label #cancel{
+    display: none;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+label #btn{
+    cursor: pointer;
+    margin-right: 30px;
+    height: 45px;
+    width: 45px;
+}
+
+#check:checked ~ .sidebar{
+    margin-top: 167px;
+}
+
+#check:checked ~ label #btn{
+    display: none;
+    transition: 0.5s;
+}
+#check:checked ~ label #cancel{
+    display: block;
+    transition: 0.5s;
+}
+#check:checked ~ nav{
+    display: none;
+}
+
+.sidebar a{
+    text-decoration: none;
+}
+.sidebar p{
+    margin-left: 2%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.sidebar p:hover{
+    transform:scale(1.005);
+    transition: 0.5s;
+}
+.bsn{
+    opaciy: 0;
 }
 }
