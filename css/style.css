@@ -62,11 +62,10 @@ nav{
 .sidebar{
     position: absolute;
     width: 100%;
-    max-height: 500px;
     background-color: #A8573F;
     margin-top: -112%;
-    transition: all .5s ease;
-    z-index: 500;
+    transition: all 1.5s ease;
+    z-index: 1;
 }
 #check{
     display: none;
@@ -400,11 +399,12 @@ footer{
 .logob{
     display: block;
     width: 20%;
+
 }
 nav{
     background-color:#A8573F;
     position: fixed;
-    z-index: 1000;
+    z-index: 2;
 }
 .navhr{
     display: none;
@@ -432,6 +432,7 @@ label #btn{
     margin-right: 30px;
     height: 45px;
     width: 45px;
+    z-index: 100;
 }
 
 #check:checked ~ .sidebar{
@@ -449,11 +450,14 @@ label #btn{
 #check:checked ~ nav{
     display: none;
 }
-
+.sidebar{
+    border-top: 1px solid #FFFEFC;
+}
 .sidebar a{
     text-decoration: none;
+    color: #fff;
 }
-.sidebar p{
+.sidebar li{
     margin-left: 2%;
     color: #fff;
     font-weight: 600;
@@ -465,6 +469,6 @@ label #btn{
     transition: 0.5s;
 }
 .bsn{
-    opaciy: 0;
+    margin-top: 10%;
 }
 }
