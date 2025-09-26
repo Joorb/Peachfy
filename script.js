@@ -1,19 +1,21 @@
-/*
-// Seleciona o botão e a barra de navegação
-const btnMenu = document.getElementById("btnMenu");
-const navMenu = document.getElementById("navMenu");
+const overlay = document.querySelector(".overlay")
+const nav = document.querySelector(".nav")
+const menu = document.getElementById("menu");
+const topbar = document.getElementById("topbar");
 const icon = document.getElementById("icon");
 
-// Adiciona o evento de clique no botão
-btnMenu.addEventListener("click", function() {
-    // Alterna a classe 'open' no botão para transformar o ícone
-    btnMenu.classList.toggle("open");
+menu.addEventListener("click", function() {
+    menu.classList.toggle("open");
     
-    // Verifica a posição da barra e alterna entre aparecer e desaparecer
-    if (navMenu.style.top === "0px") {
-        navMenu.style.top = "-100%"; // Esconde a barra
+    topbar.classList.toggle("topbar");
+    
+    if (topbar.classList.contains("topbar")) {
+        topbar.classList.toggle("opened")
+        nav.style.borderBottom = "0px"
     } else {
-        navMenu.style.top = "0px"; // Mostra a barra
+        topbar.classList.toggle("opened")
+        nav.style.borderBottom = "2px solid #FFFEFC";
+        overlay.style.opacity = "1";
     }
 });
 
@@ -24,6 +26,8 @@ btnMenu.addEventListener("click", function() {
 
 
 
+
+/*
 *{
     margin: 0;
     padding: 0;

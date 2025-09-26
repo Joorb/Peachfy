@@ -13,7 +13,7 @@ body{
 }
 
 nav{
-    transition: 0.5s;
+    transition: 0.3s;
     background-color: #FFFEFC;
     width: 100%;
     max-height: 100px;
@@ -374,12 +374,25 @@ footer{
 }
 
 @media(max-width : 500px){
-.navtc{
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+    .navtc{
     display: none;
+    nav-index: 3;
 }
 nav{
     background-color:#A8573F;
-    border-bottom: 2px solid #FFFEFC;
+    border: 0px;
     position: fixed;
     z-index: 2;
 }
@@ -405,8 +418,53 @@ nav{
     cursor: pointer;
 }
 
+.menu:hover{
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
 .menu img{
     width: 100%;
+}
+.menu.open #icon {
+    content: url('/img/x.png');
+}
+.topbar{
+    position: absolute;
+    top: -100px;
+    z-index: 1;
+}
+
+.opened{
+    position: absolute;
+    margin-top: 2px;
+    width: 100%;
+    background-color: #A8573F;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.opened ul {
+    list-style: none;
+    margin-left: 3%;
+}
+
+.opened ul li {
+    padding-top: 2%;
+}
+
+.opened ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.opened ul li:last-child{
+    padding-bottom: 30px;
+}
+.opened ul li:hover{
+    transform: scale(1.01);
+    transition: all 0.3s;
+
 }
 .bsn{
     margin-top: 11%;
