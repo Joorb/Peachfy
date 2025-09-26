@@ -13,20 +13,22 @@ body{
 }
 
 nav{
-    align-items: center;
-    display:flex;
-	justify-content:space-between;
-    transition: 1s;
+    transition: 0.5s;
     background-color: #FFFEFC;
     width: 100%;
     max-height: 100px;
+    border-bottom: 2px solid #000000;
 }
-
+.navtc{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .logo{
     width:7% ;
     margin-left: 2%;
-    padding-top: 0.6%;
-    padding-bottom: 0.5%;
+    padding: 0.5%;
 }
 .logob{
     display: none;
@@ -35,7 +37,8 @@ nav{
     display:flex;
     text-decoration: none;
     list-style: none;
-    margin-top: 0.6%;
+    margin-right: 2%;
+    white-space: nowrap;
 }
 
 .navheader li{
@@ -44,6 +47,9 @@ nav{
     font-weight: 600;
     font-size: 20px;
 }
+.navheader li:last-child{
+    padding-right: 0;
+}
 .navheader li:hover{
     transform: scale(1.01);
     transition: 0.3s;
@@ -51,28 +57,6 @@ nav{
 .navheader li a{
     text-decoration: none;
     color: #A8573F;
-}
-
-.navhr{
-    height: 2px;
-    background-color: black;
-    border: none;
-}
-
-.sidebar{
-    position: absolute;
-    width: 100%;
-    background-color: #A8573F;
-    margin-top: -112%;
-    transition: all 1.5s ease;
-    z-index: 1;
-}
-#check{
-    display: none;
-}
-.lblcheck{
-    opacity: 0;
-    display: none;
 }
 
 .s1{
@@ -390,85 +374,41 @@ footer{
 }
 
 @media(max-width : 500px){
-.navheader{
-    display: none;    
-}
-.logo{
+.navtc{
     display: none;
+}
+nav{
+    background-color:#A8573F;
+    border-bottom: 2px solid #FFFEFC;
+    position: fixed;
+    z-index: 2;
+}
+.navtr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
 }
 .logob{
     display: block;
     width: 20%;
-
-}
-nav{
-    background-color:#A8573F;
-    position: fixed;
-    z-index: 2;
-}
-.navhr{
-    display: none;
-}
-#check{
-    display: none;
-}
-.lblcheck{
-    opacity: 1;
-    display: block;
-}
-label{
-    width: 45px;
-    height: 45px;
-}
-label #cancel{
-    display: none;
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-    margin-right: 30px;
-}
-label #btn{
-    cursor: pointer;
-    margin-right: 30px;
-    height: 45px;
-    width: 45px;
-    z-index: 100;
-}
-
-#check:checked ~ .sidebar{
-    margin-top: 167px;
-}
-
-#check:checked ~ label #btn{
-    display: none;
-    transition: 0.5s;
-}
-#check:checked ~ label #cancel{
-    display: block;
-    transition: 0.5s;
-}
-#check:checked ~ nav{
-    display: none;
-}
-.sidebar{
-    border-top: 1px solid #FFFEFC;
-}
-.sidebar a{
-    text-decoration: none;
-    color: #fff;
-}
-.sidebar li{
     margin-left: 2%;
-    color: #fff;
-    font-weight: 600;
-    font-size: 20px;
+
 }
 
-.sidebar p:hover{
-    transform:scale(1.005);
-    transition: 0.5s;
+.menu{
+    aspect-ratio: 1 / 1;
+    width: 9%;
+    border: none;
+    background-color: transparent;
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+.menu img{
+    width: 100%;
 }
 .bsn{
-    margin-top: 10%;
+    margin-top: 11%;
 }
 }
