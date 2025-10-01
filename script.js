@@ -5,21 +5,32 @@ const topbar = document.getElementById("topbar");
 const icon = document.getElementById("icon");
 
 
+function ajustarBorda() {
+    const isOpened = topbar.classList.contains("opened");
+    const tamanho = window.innerWidth;
 
-
-let scrollY = 0;
+    if (tamanho > 500) {
+        nav.style.borderBottom = "2px solid #000000";
+    } else if (isOpened && tamanho <= 500) {
+        nav.style.borderBottom = "2px solid #FFFEFC";
+    } else {
+        nav.style.borderBottom = "0";
+    }
+}
 
 menu.addEventListener("click", function() {
     menu.classList.toggle("open");
     topbar.classList.toggle("opened");
 
     const isOpened = topbar.classList.contains("opened");
-
     overlay.style.opacity = isOpened ? "1" : "0";
-    nav.style.borderBottom = isOpened ? "2px solid #FFFEFC" : "0";
     icon.src = isOpened ? "img/x.png" : "img/menu.png";
 
+    ajustarBorda();
 });
+
+window.addEventListener("resize", ajustarBorda);
+
 
 document.querySelectorAll('nav a').forEach(link => {
   link.addEventListener('click', function(navmargin) {
@@ -44,8 +55,6 @@ document.querySelectorAll(".topbar a").forEach(link => {
         document.body.style.overflow = "auto"
     });
 });
-
-
 
 
 

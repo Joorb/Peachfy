@@ -401,7 +401,7 @@ footer{
 }
 nav{
     background-color:#A8573F;
-    border: 0px;
+    border-bottom: 2px solid #FFFEFC;
     position: fixed;
     z-index: 2;
 }
