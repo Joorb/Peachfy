@@ -13,7 +13,7 @@ body{
 }
 
 nav{
-    transition: 0.3s;
+    transition: all 0.1s ease;
     background-color: #FFFEFC;
     width: 100%;
     max-height: 100px;
@@ -24,6 +24,12 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.navtr{
+    display: none;
+}
+.topbar{
+    display: none;
 }
 .logo{
     width:7% ;
@@ -76,10 +82,10 @@ nav{
     border-radius: 20px;
 }
 
-.btn {
+.btn{
     position: absolute;
     top: 75%;
-    left: 6.9%;
+    left: 6.5%;
     background-color: #FFFFFF;
     padding: 1.5% 2.5% 1.5% 2.5%;
     border: none;
@@ -386,7 +392,7 @@ footer{
     transition: opacity 0.3s ease;
     z-index: 1;
 }
-    .navtc{
+.navtc{
     display: none;
     nav-index: 3;
 }
@@ -425,15 +431,35 @@ nav{
 .menu img{
     width: 100%;
 }
-.menu.open #icon {
-    content: url('/img/x.png');
-}
+
 .topbar{
+    display: block;
     position: absolute;
-    top: -100px;
     z-index: 1;
+    opacity: 0;
+}
+.topbar ul {
+    list-style: none;
+    margin-left: 3%;
+    opacity: 1;
+}
+.topbar ul li {
+    padding-top: 2%;
 }
 
+.topbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.topbar ul li:last-child{
+    padding-bottom: 30px;
+}
+.topbar ul li:hover{
+    transform: scale(1.01);
+    transition: all 0.3s;
+
+}
 .opened{
     position: absolute;
     margin-top: 2px;
@@ -442,31 +468,36 @@ nav{
     transition: all 0.3s ease;
     font-weight: 600;
     z-index: 1;
+    opacity: 1;
 }
 
-.opened ul {
-    list-style: none;
-    margin-left: 3%;
+.bsn{
+    border-radius: 0;
+    width: 100%;
 }
-
-.opened ul li {
-    padding-top: 2%;
+.bsn img{
+    margin-top: 10%;
+    border-radius: 0;
 }
-
-.opened ul li a {
-    color: white;
-    text-decoration: none;
+.btn a{
+    margin-left: 0;
     font-size: 18px;
 }
-.opened ul li:last-child{
-    padding-bottom: 30px;
+.ttls2{
+    margin-top: 9%;
 }
-.opened ul li:hover{
-    transform: scale(1.01);
-    transition: all 0.3s;
-
+.s2{
+    margin-top: 6%;
 }
-.bsn{
-    margin-top: 11%;
+.mvv{
+    width: 90%;
+    border:1px solid #A8573F;
+    margin-bottom:4%;
+}
+.mvv h2{
+    font-size: 20px;
+}
+.mvv p{
+    font-size: 15px;
 }
 }
