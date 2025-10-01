@@ -34,9 +34,6 @@ document.querySelectorAll('nav a').forEach(link => {
   });
 });
 
-
-
-
 document.querySelectorAll(".topbar a").forEach(link => {
     link.addEventListener("click", () => {
         menu.classList.remove("open");
