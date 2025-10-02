@@ -293,7 +293,6 @@ nav{
     margin-top: 3%;
     font-size: 20px;
     font-weight: 400;
-
 }
 .imgptf {
     width: 57%;
@@ -542,5 +541,33 @@ nav{
 }
 .qct h2{
     font-size: 18px;
+}
+.s5{
+}
+.ptf{
+    height: 150px;
+    padding: 4%;
+    align-items: center;
+    border-radius: 20px;
+}
+.ptfp1{
+    width: 60%;
+}
+.ttlptf{
+    font-size: 16px;
+}
+.txtptf{
+    font-size: 12px;
+}
+.imgptf{
+    margin: auto;
+    width: 40%;
+    height: 100px;
+}
+.imgptf img{
+    height: 100%;
+}
+footer{
+    display: none;
 }
 }
