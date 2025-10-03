@@ -3,7 +3,7 @@ const nav = document.querySelector(".nav")
 const menu = document.getElementById("menu");
 const topbar = document.getElementById("topbar");
 const icon = document.getElementById("icon");
-
+const bsnimg = document.querySelector(".bsn")
 
 function ajustarBorda() {
     const isOpened = topbar.classList.contains("opened");
@@ -25,7 +25,6 @@ menu.addEventListener("click", function() {
     const isOpened = topbar.classList.contains("opened");
     overlay.style.opacity = isOpened ? "1" : "0";
     icon.src = isOpened ? "img/x.png" : "img/menu.png";
-
     ajustarBorda();
 });
 

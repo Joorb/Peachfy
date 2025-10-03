@@ -396,7 +396,6 @@ footer{
 }
 .navtc{
     display: none;
-    nav-index: 3;
 }
 nav{
     background-color:#A8573F;
@@ -438,6 +437,7 @@ nav{
     position: absolute;
     z-index: 1;
     opacity: 0;
+    visibility: hidden;
 }
 .topbar ul {
     list-style: none;
@@ -462,6 +462,7 @@ nav{
 
 }
 .opened{
+    visibility: visible;
     position: absolute;
     margin-top: 2px;
     width: 100%;
