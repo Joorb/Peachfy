@@ -134,7 +134,7 @@ nav{
 }
 .txtmvv{
     font-size: 20px;
-    padding: 0 0 2% 2%;
+    padding: 0 2% 2% 2%;
     color: #300D0D;
 }
 
@@ -166,7 +166,7 @@ nav{
 .sv{
     margin-top: 3%;
     max-width: 350px;
-    max-height: 400px;
+    max-height: 500px;
     border-radius: 10px;
     border-style: solid;
     border-color: #A8573F;
@@ -374,7 +374,7 @@ footer{
     display: flex;
     justify-content: space-around;
     width: 50%;
-    background-color: rgba(0, 255, 255, 0);
+
 }
 .rdimg:hover{
     transform: scale(1.03);
@@ -416,7 +416,6 @@ nav{
 }
 
 .menu{
-    aspect-ratio: 1 / 1;
     width: 9%;
     border: none;
     background-color: transparent;
@@ -505,12 +504,12 @@ nav{
     width: 100%;
 }
 .sv{
-    aspect-ratio: 1 / 1;
     width: 40%;
 }
 .ttlsv{
     font-size: 16px;
     height: 20%;
+    background-color: aqua;
 }
 .txtsv{
     font-size: 14px;
@@ -530,12 +529,13 @@ nav{
 }
 
 .s4p2{
+    margin-top: 200px;
     flex-wrap: wrap;
     align-items: center;
-    height: 280px;
+    min-height: 260px;
     width: 60%;
     margin: auto;
-    gap: 15%;
+    gap: 10%;
 }
 .qct{
     width: 35%;
@@ -543,8 +543,7 @@ nav{
 .qct h2{
     font-size: 18px;
 }
-.s5{
-}
+
 .ptf{
     height: 150px;
     padding: 4%;
@@ -569,6 +568,6 @@ nav{
     height: 100%;
 }
 footer{
-    display: none;
+
 }
 }
