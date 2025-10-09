@@ -450,7 +450,7 @@ nav{
 .topbar ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
 }
 .topbar ul li:last-child{
     padding-bottom: 30px;
@@ -482,7 +482,7 @@ nav{
 }
 .btn a{
     margin-left: 0;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .mvv{
@@ -491,13 +491,13 @@ nav{
     margin-top: 2%;
 }
 .ttl{
-    font-size: 24px;
+    font-size: 22px;
 }
 .mvv h2{
-    font-size: 18px;
+    font-size: 16px;
 }
 .mvv p{
-    font-size: 14px;
+    font-size: 12px;
 }
 .s3{
     gap: 5%;
@@ -507,13 +507,12 @@ nav{
     width: 40%;
 }
 .ttlsv{
-    font-size: 16px;
+    font-size: 14px;
     height: 20%;
-    background-color: aqua;
 }
 .txtsv{
-    font-size: 14px;
-    padding-top: 9%;
+    font-size: 12px;
+    padding: 3%;
 }
 .s4p1{
     display: none;
@@ -523,7 +522,7 @@ nav{
     justify-content: center;
 }
 .txtct{
-    font-size: 14px;
+    font-size: 12px;
     color: #300D0D;
     width: 80%;
 }
@@ -541,12 +540,12 @@ nav{
     width: 35%;
 }
 .qct h2{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .ptf{
     height: 150px;
-    padding: 4%;
+    padding: 5%;
     align-items: center;
     border-radius: 20px;
 }
@@ -554,7 +553,7 @@ nav{
     width: 60%;
 }
 .ttlptf{
-    font-size: 16px;
+    font-size: 14px;
 }
 .txtptf{
     font-size: 12px;
@@ -568,6 +567,13 @@ nav{
     height: 100%;
 }
 footer{
+    
+}
 
+.redes{
+    display: none;
+}
+.ifft{
+    display: none;
 }
 }

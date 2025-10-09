@@ -8,14 +8,6 @@ const bsnimg = document.querySelector(".bsn")
 function ajustarBorda() {
     const isOpened = topbar.classList.contains("opened");
     const tamanho = window.innerWidth;
-
-    if (tamanho > 500) {
-        nav.style.borderBottom = "2px solid #000000";
-    } else if (isOpened && tamanho <= 500) {
-        nav.style.borderBottom = "2px solid #FFFEFC";
-    } else {
-        nav.style.borderBottom = "0";
-    }
 }
 
 menu.addEventListener("click", function() {
@@ -25,11 +17,7 @@ menu.addEventListener("click", function() {
     const isOpened = topbar.classList.contains("opened");
     overlay.style.opacity = isOpened ? "1" : "0";
     icon.src = isOpened ? "img/x.png" : "img/menu.png";
-    ajustarBorda();
 });
-
-window.addEventListener("resize", ajustarBorda);
-
 
 document.querySelectorAll('nav a').forEach(link => {
   link.addEventListener('click', function(navmargin) {
@@ -49,7 +37,6 @@ document.querySelectorAll(".topbar a").forEach(link => {
         menu.classList.remove("open");
         topbar.classList.remove("opened");
         overlay.style.opacity = "0";
-        nav.style.borderBottom = "0";
         icon.src = "img/menu.png";
         document.body.style.overflow = "auto"
     });
