@@ -545,7 +545,7 @@ nav{
 
 .ptf{
     height: 150px;
-    padding: 5%;
+    padding: 6.5%;
     align-items: center;
     border-radius: 20px;
 }
@@ -567,13 +567,53 @@ nav{
     height: 100%;
 }
 footer{
-    
+    display: flex;
+    flex-direction: column;
+}
+.ftpt1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.ft{
+    width: 49%;
+}
+.ft:nth-child(2){
+    display: none;
+}
+.logoft{
+    width: 50%;
+}
+.btft{
+    width: 70%;
+}
+.btft a{
+    font-size: 13px;
+    font-weight: 800;
+}
+.ifft{
+    font-size: 12px;
+    font-weight: 500;
 }
 
 .redes{
-    display: none;
+    width: 90%;
 }
-.ifft{
-    display: none;
+
+.rdimg{
+    width: 15%;
 }
+.redes img{
+    width: 100%;
+}
+.ftpt2{
+    border-top: 2px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 1.5%;
+    font-weight: 500;
+}
+
 }
