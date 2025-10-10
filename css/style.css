@@ -267,6 +267,7 @@ nav{
     justify-content: center;
     color: white;
     margin-top: 4%;
+    margin-bottom: 7%;
 }
 
 .ptf {
@@ -307,8 +308,13 @@ nav{
 }
 footer{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     background-color: #4F2012;
+}
+.ftpt1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .ft{
     padding: 2% 0 2% 0;
@@ -379,6 +385,15 @@ footer{
 .rdimg:hover{
     transform: scale(1.03);
     transition: 0.3s;
+}
+.ftpt2{
+    border-top: 2px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 1%;
+    font-weight: 500;
 }
 
 @media(max-width : 500px){
