@@ -10,7 +10,6 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #FFFEFC;
-    text-align: justify;
 }
 
 nav{
@@ -140,6 +139,7 @@ nav{
     font-size: 20px;
     padding: 0 2% 2% 2%;
     color: #300D0D;
+    text-align: justify;
 }
 
 .hr1{
@@ -163,13 +163,14 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 4%;
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
 .sv{
     margin-top: 3%;
-    max-width: 350px;
+    max-width: 400px;
+    height: 500px;
     max-height: 500px;
     border-radius: 10px;
     border-style: solid;
@@ -180,17 +181,18 @@ nav{
     width: 100.4%;
 }
 .ttlsv{
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 500;
     text-decoration: underline;
     color: #241717;
-    padding: 2%;
+    padding: 2% 5% 2% 5%;
 }
 .txtsv{
     font-size: 18px;
     font-weight: 400;
     color: #241717;
-    padding: 12% 2% 12% 2%;
+    padding: 12% 5% 12% 5%;
+    text-align: justify;
 }
 .hr2{
     height: 1px;
@@ -223,6 +225,7 @@ nav{
     font-size: 20px;
     color: #300D0D;
     width: 25%;
+    text-align: justify;
 }
 .s4p2{
     margin-top: 4.5%;
@@ -498,11 +501,14 @@ nav{
     margin-top: 7%;
     border-radius: 0;
 }
+.btn{
+    border-radius: 5px;
+}
 .btn a{
     margin-left: 0;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 600;
 }
-
 .mvv{
     width: 90%;
     border:1px solid #A8573F;
@@ -523,16 +529,17 @@ nav{
 }
 .sv{
     aspect-ratio: 1/1.5;
-    width: 37%;
+    width: 43%;
     min-height: 250px;
+    max-height: 350px;
 }
 .ttlsv{
     font-size: 13px;
-    height: 20%;
+    height: 15%;
 }
 .txtsv{
     font-size: 12px;
-    padding: 3%;
+    padding: 0% 3% 3% 3%;
 }
 .s4p1{
     display: none;
@@ -566,10 +573,11 @@ nav{
 
 .ptf{
     width: 90%;
-    height: 150px;
+    height: 300px;
     padding:4% 4% 4% 4%;
     border-radius: 20px;
     gap: 0;
+    flex-direction: column;
 }
 .ptfp1{
     width: 60%;
@@ -582,8 +590,8 @@ nav{
 }
 .imgptf{
     margin: auto;
-    width: 40%;
-    height: 100px;
+    width: 70%;
+    height: 300px;
 }
 .imgptf img{
     height: 100%;
