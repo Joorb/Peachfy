@@ -572,7 +572,7 @@ nav{
 
 
 .ptf{
-    width: 90%;
+    width: 70%;
     height: 300px;
     padding:4% 4% 4% 4%;
     border-radius: 20px;
@@ -581,12 +581,17 @@ nav{
 }
 .ptfp1{
     width: 60%;
+    margin: auto;
 }
 .ttlptf{
     font-size: 14px;
+    display: flex;
+    justify-content: center;
 }
 .txtptf{
     font-size: 12px;
+    margin-bottom: 20px;
+    text-align: justify;
 }
 .imgptf{
     margin: auto;
