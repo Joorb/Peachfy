@@ -5,11 +5,6 @@ const topbar = document.getElementById("topbar");
 const icon = document.getElementById("icon");
 const bsnimg = document.querySelector(".bsn")
 
-function ajustarBorda() {
-    const isOpened = topbar.classList.contains("opened");
-    const tamanho = window.innerWidth;
-}
-
 menu.addEventListener("click", function() {
     menu.classList.toggle("open");
     topbar.classList.toggle("opened");
